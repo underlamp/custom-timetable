@@ -7,14 +7,14 @@ packages:
       name: black_hole_flutter
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.2.13"
+    version: "0.3.0"
   characters:
     dependency: transitive
     description:
       name: characters
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.1.0-nullsafety.3"
+    version: "1.1.0"
   charcode:
     dependency: transitive
     description:
@@ -28,7 +28,7 @@ packages:
       name: collection
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.15.0-nullsafety.3"
+    version: "1.15.0"
   convert:
     dependency: transitive
     description:
@@ -56,12 +56,12 @@ packages:
     source: sdk
     version: "0.0.0"
   meta:
-    dependency: "direct overridden"
+    dependency: transitive
     description:
       name: meta
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.3.0-nullsafety.3"
+    version: "1.3.0"
   path:
     dependency: transitive
     description:
@@ -76,13 +76,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.9.0"
-  resource:
-    dependency: transitive
-    description:
-      name: resource
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "2.1.7"
   rxdart:
     dependency: transitive
     description:
@@ -95,6 +88,20 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.99"
+  supercharged:
+    dependency: transitive
+    description:
+      name: supercharged
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.0"
+  supercharged_dart:
+    dependency: transitive
+    description:
+      name: supercharged_dart
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.0"
   time:
     dependency: transitive
     description:
@@ -108,7 +115,7 @@ packages:
       name: time_machine
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.9.13"
+    version: "0.9.16"
   timetable:
     dependency: "direct main"
     description:
@@ -122,14 +129,14 @@ packages:
       name: typed_data
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.3.0-nullsafety.3"
+    version: "1.3.0"
   vector_math:
     dependency: transitive
     description:
       name: vector_math
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.1.0-nullsafety.3"
+    version: "2.1.0"
 sdks:
-  dart: ">=2.10.0-110 <=2.11.0-213.1.beta"
-  flutter: ">=1.23.0-13.0.pre"
+  dart: ">=2.12.0 <3.0.0"
+  flutter: ">=1.24.0-7.0.pre"

@@ -25,7 +25,16 @@ class _TimetableExampleState extends State<TimetableExample> {
   @override
   void initState() {
     super.initState();
+  }
 
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
     _controller = TimetableController(
       // A basic EventProvider containing a single event:
       // eventProvider: EventProvider.list([
@@ -63,23 +72,13 @@ class _TimetableExampleState extends State<TimetableExample> {
 
       // Other (optional) parameters:
       initialTimeRange: InitialTimeRange.range(
-        startTime: LocalTime(8, 0, 0),
+        startTime: LocalTime(6, 0, 0),
         endTime: LocalTime(20, 0, 0),
       ),
       initialDate: LocalDate.today(),
-      visibleRange: VisibleRange.days(3),
+      visibleRange: VisibleRange.days(5),
       firstDayOfWeek: DayOfWeek.monday,
     );
-  }
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
@@ -113,8 +112,8 @@ class _TimetableExampleState extends State<TimetableExample> {
   }
 
   void _showSnackBar(String content) {
-    _scaffoldKey.currentState.showSnackBar(SnackBar(
-      content: Text(content),
-    ));
+    // _scaffoldKey.currentState.showSnackBar(SnackBar(
+    //   content: Text(content),
+    // ));
   }
 }
