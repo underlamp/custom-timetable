@@ -1,4 +1,4 @@
-library timetable;
+library custom_timetable;
 
 export 'src/all_day.dart' show AllDayEventLayoutInfo;
 export 'src/basic.dart';

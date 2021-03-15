@@ -10,7 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  timetable:
+  custom_timetable:
     path: ../
   time_machine: ^0.9.12
 
